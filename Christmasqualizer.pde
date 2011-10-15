@@ -29,7 +29,6 @@ int pins[] = { 2, 3, 4, 5, 8, 9, 10 };
 // No real need to edit past here.
 //
 void setup() {
- Serial.begin(9600);
  pinMode(analogPin, INPUT);
  pinMode(strobePin, OUTPUT);
  pinMode(resetPin, OUTPUT);
@@ -52,9 +51,9 @@ void loop() {
     delayMicroseconds(30);
     int value = analogRead(analogPin);
     
-    if ( value > 110 ) {
+    if ( value > 675 ) {
      digitalWrite(pins[i], HIGH);
-    } else if ( value < 110 ) {
+    } else if ( value < 650 ) {
      digitalWrite(pins[i], LOW); 
     }
     
