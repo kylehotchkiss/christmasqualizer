@@ -7,10 +7,6 @@ to be an awesome help with wiring it. I also used a bunch of [S108T02s](http://w
 for the relays actually controlling the christmas lights and I have to
 recommend these if you don't have a better solid-state relay decided on.
 
-The code is tuned so that you'll need to turn the volume all the way up
-on your media device before the splitter. You can adjust your volume if 
-the lights aren't crazy enough. 
-
 As far as the code goes, you'll need to edit the first four lines once
 you have your MSGEQ7 wired in so that it all links to the right pins.
 The array of pins on the 4th line is your relay / light pins and go
